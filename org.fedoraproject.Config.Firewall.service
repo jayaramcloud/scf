@@ -1,0 +1,4 @@
+[D-BUS Service]
+Name=org.fedoraproject.Config.Firewall
+Exec=/usr/share/system-config-firewall/system-config-firewall-mechanism.py
+User=root

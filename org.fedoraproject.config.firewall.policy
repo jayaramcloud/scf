@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+
+  <vendor>System Config Firewall</vendor>
+  <vendor_url>http://fedorahosted.org/system-config-firewall</vendor_url>
+
+   <action id="org.fedoraproject.config.firewall.auth">
+    <description>Firewall authorization</description>
+    <description xml:lang="ar">تصريح الجدار النّاريّ</description>
+    <description xml:lang="as">ফায়াৰ্ৱালৰ বাবে প্ৰমাণীকৰণ</description>
+    <description xml:lang="bn_IN">ফায়ারওয়ালের জন্য অনুমোদন</description>
+    <description xml:lang="bs">Autorizacija vatrenog zida</description>
+    <description xml:lang="ca">Autorització del tallafoc</description>
+    <description xml:lang="cs">Autorizace firewallu</description>
+    <description xml:lang="da">Firewall autorisering</description>
+    <description xml:lang="de">Firewall-Autorisierung</description>
+    <description xml:lang="el">Πιστοποίηση Firewall</description>
+    <description xml:lang="en_GB">Firewall authorisation</description>
+    <description xml:lang="es">Autorización del cortafuegos</description>
+    <description xml:lang="fi">Tunnistautuminen palomuuriasetuksien muokkaamista varten</description>
+    <description xml:lang="fr">Autorisation pour le pare-feu</description>
+    <description xml:lang="gu">ફાયરવોલ સત્તાધિકરણ</description>
+    <description xml:lang="he">אימות חומת אש</description>
+    <description xml:lang="hi">फायरवाल प्राधिकार</description>
+    <description xml:lang="hu">Tűzfal engedély</description>
+    <description xml:lang="is">Auðkenning eldveggs</description>
+    <description xml:lang="it">Autorizzazione del Firewall</description>
+    <description xml:lang="ja">ファイアーウォールの権限授与</description>
+    <description xml:lang="kn">ಫೈರ್ವಾಲ್ ದೃಢೀಕರಣ</description>
+    <description xml:lang="ko">방화벽 인증  </description>
+    <description xml:lang="ml">ഫയര്‍വോള്‍ ആധികാരികത ഉറപ്പാക്കല്‍</description>
+    <description xml:lang="mr">फायरवॉल अथॉराइजेशन</description>
+    <description xml:lang="nb">Autorisering for brannmur</description>
+    <description xml:lang="nl">Firewall authenticatie</description>
+    <description xml:lang="or">ଅଗ୍ନିକବଚର ପ୍ରାଧିକରଣ</description>
+    <description xml:lang="pa">ਫਾਇਰਵਾਲ ਪ੍ਰਮਾਣਿਕਤਾ</description>
+    <description xml:lang="pl">Upoważnienie zapory sieciowej</description>
+    <description xml:lang="pt">Autorização da Firewall</description>
+    <description xml:lang="pt_BR">Autorização do firewall</description>
+    <description xml:lang="ru">Авторизация межсетевого экрана</description>
+    <description xml:lang="sk">Oprávnenie firewallu</description>
+    <description xml:lang="sr">Овлашћење заштитног зида</description>
+    <description xml:lang="sr@latin">Ovlašćenje zaštitnog zida</description>
+    <description xml:lang="sv">Brandväggsauktorisering</description>
+    <description xml:lang="ta">ஃபயர்வால் அனுமதி</description>
+    <description xml:lang="te">ఫైర్‌వాల్ ధృవీకరణము</description>
+    <description xml:lang="uk">Авторизація мережного екрану</description>
+    <description xml:lang="zh_CN">防火墙验证</description>
+    <description xml:lang="zh_TW">防火牆認證</description>
+    <message>Authentication is required to read and modify firewall settings</message>
+    <message xml:lang="ar">الاستيثاق مطلوب من اجل قراءة وتعديل إعدادات الجدار النّاريّ</message>
+    <message xml:lang="as">ফায়াৰ্ৱালৰ পছন্দ পঢ়িবলৈ আৰু সলনি কৰিবলৈ প্ৰমাণীকৰণৰ প্ৰয়োজন</message>
+    <message xml:lang="bn_IN">ফায়ারওয়ালের বৈশিষ্ট্য পড়ার ও পরিবর্তনের জন্য অনুমোদন প্রয়োজন</message>
+    <message xml:lang="bs">Autentifikacija je potrebna da bi se čitale i modificirale postavke vatrenog zida</message>
+    <message xml:lang="ca">Cal autenticació per llegir i modificar la configuració del tallafoc</message>
+    <message xml:lang="cs">K modifikaci nastavení firewallu je vyžadována autentizace</message>
+    <message xml:lang="da">Godkendelse er påkrævet for at læse og ændre firewallindstillinger</message>
+    <message xml:lang="de">Authentifizierung wird benötigt, um Firewall-Einstellungen zu lesen und zu ändern</message>
+    <message xml:lang="el">Απαιτείται πιστοποίηση για την ανάγνωση και τροποποίηση των ρυθμίσεων του firewall</message>
+    <message xml:lang="en_GB">Authentication is required to read and modify firewall settings</message>
+    <message xml:lang="es">Se necesita autenticación para leer o modificar la configuración del cortafuegos</message>
+    <message xml:lang="fi">Palomuuriasetusten lukeminen ja muokkaaminen vaatii tunnistautumisen</message>
+    <message xml:lang="fr">Authentification requise pour lire et modifier les paramètres du pare-feu</message>
+    <message xml:lang="gu">સત્તાધિકરણ વાંચવા માટે જરૂરી છે અને ફાયરવોલ સુયોજનોને બદલો</message>
+    <message xml:lang="he">אימות נדרש כדי לקרוא ולשנות את הגדרות חומת האש</message>
+    <message xml:lang="hi">सत्यापन फ़ायरवॉल सेटिंग पढ़ने और बदलने के लिए जरूरी है</message>
+    <message xml:lang="hu">Hitelesítésre van szükség, hogy olvasni és módosítani tudja a tűzfal beállításait</message>
+    <message xml:lang="is">Auðkenningar er krafist til að lesa og breyta stillingum eldveggjarins</message>
+    <message xml:lang="it">E' richiesta l'autenticazione per leggere e modificare le impostazioni del firewall</message>
+    <message xml:lang="ja">ファイアウォールの設定の読み込みと修正には、認証が必要です。</message>
+    <message xml:lang="kn">ಫೈರ್ವಾಲ್ ಸಿದ್ಧತೆಗಳನ್ನು ಓದಲು ಹಾಗು ಮಾರ್ಪಡಿಸಲು ದೃಢೀಕರಣದ ಅಗತ್ಯವಿದೆ</message>
+    <message xml:lang="ko">방화벽 설정을 읽고 수정하려면 인증이 필요합니다  </message>
+    <message xml:lang="ml">ഫയര്‍വോള്‍ ക്രമീകരണങ്ങള്‍ വായിച്ചു് മാറ്റങ്ങള്‍ വരുത്തുന്നതിനായി നിങ്ങള്‍ക്കു് ആധികാരികത ഉറപ്പാക്കേണ്ടതുണ്ടു്</message>
+    <message xml:lang="mr">फायरवॉल संरचना वाचन किंवा संपादन करीता ओळख पटवणे आवश्यक आहे</message>
+    <message xml:lang="nl">Authenticatie is vereist om de firewall instellingen te lezen en te veranderen</message>
+    <message xml:lang="or">ଅଗ୍ନିକବଚ ବିନ୍ୟାସକୁ ପଢ଼ିବା ଏବଂ ପରିବର୍ତ୍ତନ କରିବା ପାଇଁ ବୈଧିକରଣ ଆବଶ୍ୟକ</message>
+    <message xml:lang="pa">ਫਾਇਰਵਾਲ ਸੈਟਿੰਗ ਪੜਨ ਅਤੇ ਸੋਧਣ ਲਈ ਪ੍ਰਮਾਣਿਕਤਾ ਦੀ ਲੋੜ ਹੈ</message>
+    <message xml:lang="pl">Wymagane jest uwierzytelnienie, aby odczytać i zmodyfikować ustawienia zapory sieciowej</message>
+    <message xml:lang="pt">A autenticação é necessária para ler e modificar as configurações da firewall</message>
+    <message xml:lang="pt_BR">A autenticação é necessária para ler e modificar as configurações do firewall</message>
+    <message xml:lang="ru">Для чтения и изменения настроек межсетевого экрана необходима аутентификация</message>
+    <message xml:lang="sk">Na čítanie a úpravu nastavení firewallu je vyžadované overenie</message>
+    <message xml:lang="sr">Неопходна је аутентификација за читање и измену подешавање заштитног зида</message>
+    <message xml:lang="sr@latin">Neophodna je autentifikacija za čitanje i izmenu podešavanje zaštitnog zida</message>
+    <message xml:lang="sv">Autenticering krävs för att läsa och ändra brandväggsinställningar</message>
+    <message xml:lang="ta">தேவையான ஃபயர்வால் அமைவுகளை வாசிக்க மற்றும் மாற்ற அனுமதி தேவை</message>
+    <message xml:lang="te">ఫైర్‌వాల్ అమరికలను చదువుటకు మరియు సవరించుటకు ధృవీకరణము అవసరము</message>
+    <message xml:lang="uk">Для читання та зміни параметрів мережного екрану потрібна автентифікація</message>
+    <message xml:lang="zh_CN">读取和修改防火墙设置需经过验证</message>
+    <message xml:lang="zh_TW">讀取和修改防火牆設定需經過認證</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+
+</policyconfig>

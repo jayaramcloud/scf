@@ -1,0 +1,58 @@
+#!/usr/bin/python
+#
+# Copyright (C) 2007, 2008 Red Hat, Inc.
+# Authors:
+# Thomas Woerner <twoerner@redhat.com>
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Converts config file from system-config-firewall-1.0.X to 
+# system-config-firewall-1.1.X
+#
+
+import os, os.path, sys
+
+DATADIR = '/usr/share/system-config-firewall'
+import sys
+sys.path.append(DATADIR)
+
+from fw_config import *
+from fw_functions import getPortID, getServiceName
+from fw_sysconfig import *
+import fw_services
+import fw_compat
+
+# check euid
+if os.geteuid() != 0:
+    print _("\nERROR - You must be root to run %s.") % \
+        os.path.basename(sys.argv[0])
+    sys.exit(1)
+
+### load configuration ###
+config = read_sysconfig_config(compat=True)
+if not config:
+    sys.exit(0)
+
+# OLD_CONFIG (system-config-securitylevel) already converted, but not 1.0 
+# style CONFIG (system-config-firewall)
+if not config.converted and len(config.services) > 0:
+    # already new stlye file format:
+    sys.exit(0)
+
+fw_compat.convertToServices(config)
+
+c_status = int(write_sysconfig_config(CONFIG, config) == False)
+if c_status != 0:
+    print _("Failed to write %s.") % CONFIG
+sys.exit(c_status)
